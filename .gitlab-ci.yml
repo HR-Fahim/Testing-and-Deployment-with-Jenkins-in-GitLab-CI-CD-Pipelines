@@ -6,15 +6,16 @@ stages:
 build:
   stage: build
   script:
-  - npm install -g npm@latest
-  - npm cache clean --force
-  - npm rm -rf node_modules && rm package-lock.json
-  - npm install
+  
 
 
 test:
   stage: test
   script:
+    - npm install -g npm@latest
+    - npm cache clean --force
+    - npm rm -rf node_modules && rm package-lock.json
+    - npm install
     - echo "Running API tests"
     - newman run C:/Users/Asus/Desktop/Postman/Collections/Gitlab Pipeline Testing Collection.postman_collection --environment C:/Users/Asus/Desktop/Postman/Environments/Gitlab Pipeline Testing Environment.postman_environment
     # Replace 'path/to/your/postman_collection.json' and 'path/to/your/postman_environment.json' with the actual paths to your Postman files
