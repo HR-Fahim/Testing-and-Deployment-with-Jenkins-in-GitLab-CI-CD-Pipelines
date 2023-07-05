@@ -4,4 +4,4 @@ build:
     - echo "Building the API"
     - choco install nodejs -y  # Install Node.js and npm using Chocolatey
     - RefreshEnv  # Refresh environment variables after installation
-    - npm ci  # Install project dependencies from package-lock.json or npm-shrinkwrap.json
+    - npm install  # Install project dependencies from package-lock.json or npm-shrinkwrap.json
