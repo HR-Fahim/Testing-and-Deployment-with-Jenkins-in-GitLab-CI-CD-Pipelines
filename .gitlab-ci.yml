@@ -1,0 +1,10 @@
+stages:
+  - test
+
+test_job:
+  stage: test
+  script:
+    - echo "Running tests"
+    - echo "Test 1"
+    - echo "Test 2"
+    - echo "Test 3"
