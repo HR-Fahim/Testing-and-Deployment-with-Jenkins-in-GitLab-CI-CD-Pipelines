@@ -3,12 +3,6 @@ stages:
   - test
   - deploy
 
-build:
-  stage: build
-  script:
-    - echo "Building the API"
-    - npm run build
-
 
 test:
   stage: test
