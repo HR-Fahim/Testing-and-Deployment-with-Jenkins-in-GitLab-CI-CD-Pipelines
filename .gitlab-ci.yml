@@ -8,7 +8,6 @@ test:
   stage: test
   script:
     - echo "Running API tests"
-    - npm install -g newman
     - newman run C:/Users/Asus/Desktop/Postman/Collections/Gitlab Pipeline Testing Collection.postman_collection --environment C:/Users/Asus/Desktop/Postman/Environments/Gitlab Pipeline Testing Environment.postman_environment
     # Replace 'path/to/your/postman_collection.json' and 'path/to/your/postman_environment.json' with the actual paths to your Postman files
 
