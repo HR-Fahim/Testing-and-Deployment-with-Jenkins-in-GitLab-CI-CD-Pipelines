@@ -1,0 +1,24 @@
+stages:
+  - test
+
+unit_test:
+  stage: test
+  script:
+    - echo "Running unit tests"
+    - npm install  # Example command to install dependencies
+    - npm run test # Example command to run unit tests
+
+integration_test:
+  stage: test
+  script:
+    - echo "Running integration tests"
+    - npm install  # Example command to install dependencies
+    - npm run integration-test # Example command to run integration tests
+
+code_quality:
+  stage: test
+  script:
+    - echo "Running code quality checks"
+    - npm install  # Example command to install dependencies
+    - npm run lint # Example command to run linting
+
