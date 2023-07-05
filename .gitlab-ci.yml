@@ -2,6 +2,6 @@ build:
   stage: build
   script:
     - echo "Building the API"
-    - apt-get update -qy  # Update the package lists (for Linux-based runners)
-    - apt-get install -qy npm  # Install npm (for Linux-based runners)
+    - choco install nodejs -y  # Install Node.js and npm using Chocolatey
+    - RefreshEnv  # Refresh environment variables after installation
     - npm ci  # Install project dependencies from package-lock.json or npm-shrinkwrap.json
