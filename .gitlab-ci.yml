@@ -3,6 +3,14 @@ stages:
   - test
   - deploy
 
+build:
+  stage: build
+  script:
+  - npm install -g npm@latest
+  - npm cache clean --force
+  - npm rm -rf node_modules && rm package-lock.json
+  - npm install
+
 
 test:
   stage: test
