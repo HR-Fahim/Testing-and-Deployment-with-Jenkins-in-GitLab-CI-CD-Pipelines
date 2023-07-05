@@ -1,15 +1,26 @@
 stages:
+  - build
   - test
+  - deploy
 
-test_job:
+build:
+  stage: build
+  script:
+    - echo "Building the API"
+    - npm run build
+
+
+test:
   stage: test
   script:
-    - echo "Running tests"
-    - echo "Test 1"
-    - echo "Test 2"
-    - echo "Test 3"
-    # Add your actual test command here
-    - npm install  # Example command to install dependencies
-    - npm run test_command # Replace 'test_command' with your actual test command
+    - echo "Running API tests"
+    - npm install -g newman
+    - newman run C:/Users/Asus/Desktop/Postman/Collections/Gitlab Pipeline Testing Collection.postman_collection --environment C:/Users/Asus/Desktop/Postman/Environments/Gitlab Pipeline Testing Environment.postman_environment
+    # Replace 'path/to/your/postman_collection.json' and 'path/to/your/postman_environment.json' with the actual paths to your Postman files
 
+deploy:
+  stage: deploy
+  script:
+    - echo "Deploying the API"
+    - # Add commands for deploying the API
 
