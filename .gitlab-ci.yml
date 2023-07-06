@@ -3,6 +3,11 @@ stages:
   - test
   - deploy
 
+build:
+  stage: build
+  script:
+    - echo "Building the API"
+
 test:
   stage: test
   script:
