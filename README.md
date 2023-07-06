@@ -36,7 +36,7 @@ To execute this pipeline, GitLab personal runner was utilized. The personal runn
 
 # CI/CD Pipeline Result
 
-
+![Pipeline Result](<Pipeline V2.png>)
 
 # License
 
