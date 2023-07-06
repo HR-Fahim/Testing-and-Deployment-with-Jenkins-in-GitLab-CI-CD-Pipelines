@@ -1,6 +1,6 @@
 # GitLab CI/CD Pipeline Testing
 
-This repository contains a GitLab pipeline configuration file (`gitlab-ci.yml`) that automates the build, test, and deployment processes for an API. The pipeline consists of the following stages:
+This repository contains a GitLab pipeline configuration file `gitlab-ci.yml` that automates the build, test, and deployment processes for an API. The pipeline consists of the following stages:
 
 ## Stages
 - **Build:** This stage is responsible for building the necessary artifacts or dependencies required for the API.
