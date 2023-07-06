@@ -1,8 +1,10 @@
-# GitLab CI/CD Pipeline Concept
+# GitLab CI/CD Pipeline Tesing
+
+![https://docs.gitlab.com/ee/ci/introduction/](<CI-CD Concepts.png>)
 
 [GitLab CI/CD Pipeline Concept](https://docs.gitlab.com/ee/ci/introduction/)
 
-![https://docs.gitlab.com/ee/ci/introduction/](<CI-CD Concepts.png>)
+# About
 
 This repository contains a GitLab pipeline configuration file (`gitlab-ci.yml`) that automates the build, test, and deployment processes for an API. The pipeline consists of the following stages:
 
@@ -38,11 +40,11 @@ Please refer to the `gitlab-ci.yml` file in this repository for the detailed pip
 
 To execute this pipeline, GitLab personal runner was utilized. The personal runner is a machine or virtual environment that runs the CI/CD jobs defined in the pipeline configuration. It enables the seamless execution of the pipeline stages on the runner's environment.
 
-![Runner](Runner.jpg)
+![Runner Deatils](<Runner Details.jpg>)
 
 # CI/CD Pipeline Result
 
-![Pipeline Result](<Pipeline V2.png>)
+![Pipeline Result](<Pipeline Result.png>)
 
 # License
 
