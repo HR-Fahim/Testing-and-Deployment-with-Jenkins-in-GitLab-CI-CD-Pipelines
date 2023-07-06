@@ -44,6 +44,8 @@ To execute this pipeline, GitLab personal runner was utilized. The personal runn
 
 # CI/CD Pipeline Result
 
+Pipeline job results:
+
 ![Pipeline Result](<Pipeline Result.png>)
 
 # License
