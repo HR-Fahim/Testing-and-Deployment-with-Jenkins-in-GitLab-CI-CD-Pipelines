@@ -1,6 +1,6 @@
 # GitLab CI/CD Pipeline Testing
 
-This repository contains a GitLab pipeline configuration file `gitlab-ci.yml` that automates the build, test, and deployment processes for an API. The pipeline consists of the following stages:
+This repository contains a GitLab pipeline configuration file (`gitlab-ci.yml`) that automates the build, test, and deployment processes for an API. The pipeline consists of the following stages:
 
 ## Stages
 - **Build:** This stage is responsible for building the necessary artifacts or dependencies required for the API.
@@ -30,6 +30,15 @@ The `deploy` stage is responsible for deploying the API to the desired environme
 
 Please refer to the `gitlab-ci.yml` file in this repository for the detailed pipeline configuration. 
 
-## License
+# GitLab Personal Runner
+
+To execute this pipeline, GitLab personal runner was utilized. The personal runner is a machine or virtual environment that runs the CI/CD jobs defined in the pipeline configuration. It enables the seamless execution of the pipeline stages on the runner's environment.
+
+# CI/CD Pipeline Result
+
+
+
+# License
+
 This repository is licensed under the [MIT License](LICENSE). You are free to use, modify, and distribute the code in this repository for both commercial and non-commercial purposes. Please see the [LICENSE](LICENSE) file for more details.
 
