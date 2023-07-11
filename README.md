@@ -1,4 +1,4 @@
-# GitLab CI/CD Pipeline Tesing
+# GitLab CI/CD Pipelines Testing With Jenkins
 
 ![https://docs.gitlab.com/ee/ci/introduction/](<CI-CD Concepts.png>)
 
